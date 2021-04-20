@@ -1,0 +1,383 @@
+/* GLOBAL (Dans le cas de figure du H2:after pour pouvoir centrer nos éléments en rapport avec le 
+petit soulignement vert utiliser Display: Block .Dans le cas contraire si aucune mention n'est faite le soulignement disparait)
+=================================================================================================================================*/
+
+html {
+    background-color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: Orbitron;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: white;
+    letter-spacing: -1px;
+    font-weight: 600;
+    word-spacing: 8px;
+}
+
+h2 {
+    color: red;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+h2:after {
+    display: block;
+    height: 3px;
+    background-color: green;
+    width: 100px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+h3 {
+    font-size: 160%;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 24px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+/* Manipulation du HAIDER (Image d'arrière plan)
+==================================================*/
+
+header {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 204, 0, 1)),
+        url(../image/Terrafoot1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* TITLE
+=================================*/
+.home-title {
+    position: absolute;
+    top: 30%;
+}
+
+.home-title h1 {
+    font-size: 340%;
+}
+
+.home-title h1 span {
+    color: rgb(39, 252, 5);
+}
+
+/* PARAGRAPHE
+================================*/
+.home-title p {
+    color: white;
+}
+
+/* MANIPULATION du Bouton=BUTTON
+===================================*/
+
+.btn {
+    /* display: inline-block; Cohérent ? */
+    padding: 10px 110px;
+    transition: background-color 1s, color 1s, border 1s;
+    margin-bottom: 20px;
+}
+
+.btn-full {
+    border: 5px rgb(5, 252, 16) solid;
+    color: rgb(0, 130, 228);
+    border-radius: 30px;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.btn-ghost {
+    background-color: rgb(5, 252, 16);
+    color: rgb(0, 130, 228);
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+
+.btn-full:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.btn-ghost:hover {
+    background-color: white;
+    color: black;
+}
+
+/* MANIPULATION Section Règle du jeu
+=======================================*/
+
+.jeu-img {
+    max-width: 100%;
+}
+
+.jeu-plus {
+    margin: 40px 0;
+}
+
+.jeu-icon {
+    font-size: 30px;
+    color: green;
+    transition: all 1s;
+}
+
+.jeu-icon:hover {
+    color: red;
+    transform: translateX(25px) rotate(55deg);
+    transition: all 1s;
+}
+
+/* MANIPULATION Section Famille de joueurs de football 
+=========================================================*/
+
+.famille-joueur {
+    background-color:rgb(255, 217, 0);
+}
+
+.famille-details {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.3);
+}
+
+.famille-details h4, p {
+    text-align: center;
+    font-style: italic;
+}
+
+.background-skyblue {
+    background-color: skyblue;
+}
+
+.background-lightsalmon {
+    background-color: lightsalmon;
+}
+
+.background-springgreen {
+    background-color: springgreen;
+}
+
+.bdr-radius-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.bdr-tb-dark {
+    border-top: solid  black 2px;
+    border-bottom: solid  black 2px;
+}
+
+.bdr-b-dark {
+    border-bottom: solid black 2px;
+}
+
+.bdr-t-dark {
+    border-top: solid black 2px;
+}
+
+
+/* MANIPULATION Galeries photos de stade de football 
+========================================================*/
+
+.galerie-image-stade {
+    /* display:block; (Cohérent ?) */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.galerie-image-titre {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+}
+
+/* MANIPULATION Avis Client (La propriété background-attachment:fixed permet de fixer l'image d'arrière plan 
+pendant qu'on scroll, pendant qu'on fait défiler) 
+===================================================================================================================*/
+
+.bg-ballon {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 204, 0, 1)), url(../image/ballon.jpg);
+    background-size: cover;
+    height: 650px;
+    background-attachment: fixed;
+}
+
+.bg-ballon h2 {
+    color: white;
+}
+
+.bg-ballon h2:after {
+    background-color: black;
+}
+
+
+blockquote {
+    color: white;
+    font-style: italic;
+    line-height: 140%;
+}
+
+/* Symbole Avis Client:before servant à mettre du contenu */
+blockquote:before {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 650%;
+    font-family: Sanchez;
+    content:"\201C";
+    position: absolute;
+    top: 17px;
+    left: 5px  
+}
+
+/* Dans ce cas de figure la propriété "display: block" est cohérent servant à déplacer notre élément*/
+cite{
+    font-size: 80%;
+    display: block;
+    margin-top: 40px;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* MANIPULATION Tableau des packs 
+===================================*/
+
+/* la div class=pack c'est plusieurs bulles qui englobent le contenu des différents packs */
+.pack {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 80%;
+}
+
+.pack p {
+    text-align: left;
+}
+
+.pack h3 {
+    color: brown;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+
+.pack-title {
+    padding: 15px 15px 0 15px;
+    border-bottom: solid rgb(236, 214, 214) 1px;
+}
+
+.pack-argent {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+
+.pack-or{
+    background-color: rgb(255, 217, 0);
+    color: white;
+    border-radius: 10px;
+}
+
+/* list-style: none = Efface les petits ronds de puces de la liste*/
+.pack-number ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+/*PROBLEME ICONS MANIPULATION NE MARCHANT PAS .pack-number ul li i{
+    font-size: 90%;
+    margin-left: 10px;
+}*/
+
+.pack-signup {
+    background-color: burlywood;
+    border: solid black 2px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-pack {
+    color: white;
+}
+
+
+/* MANIPULATION Formulaire de Contact 
+=======================================*/
+
+.form p {
+    text-align: left;
+}
+
+.contact-form {
+    margin-bottom: 35px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-brown {
+    background-color: burlywood;
+    color: white;
+    border-radius: 15px;
+    border: solid black 2px;
+    transition: color 1s;
+}
+   
+.btn-brown:hover {
+    color: black;
+}
+
+.map {
+    overflow: hidden;
+}
+
+/* MANIPULATION du Footer 
+============================*/
+
+footer {
+    background-color: rgb(255, 217, 0);
+    height: 70px;
+    padding: 20px
+}
+
+.copyright a {
+    color: white;
+}

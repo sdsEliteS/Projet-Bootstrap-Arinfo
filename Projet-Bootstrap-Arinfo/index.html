@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Elite S Compagny</title>
+    <meta charset="utf8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <!-- Link Font Awesome pour les icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link Google Fonts Police d'écriture ORBITRON -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Link Google Fonts Police d'écriture(2) SANCHEZ pour le symbole Avis Client -->
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Link Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Link Connexion avec la page CSS -->
+    <link rel=stylesheet href="ressources/css/style.css">
+</head>
+
+<!-- Manipulation Header + Navbar -->
+
+<body>
+    <header class="bdr-b-dark">
+
+        <!-- "bg-primary" est la Couleur de la Navbar -->
+        <!-- navbar-expand-lg = VERSION Large ressemblant au col-md- etc.. -->
+        <!-- l'attribut "data-toggle" déclenche l'attribut "data-target" pointant sur du contenu en rapport avec le menu de la div 
+            (navbar-nav) donc ils doivent être écrit dans l'ordre ci-dessous -->
+        <!-- l'attribut "aria-controls" contrôle le panneau dépliant (liste déroulante) en cliquant sur le bouton icon responsive -->
+        <!-- la Class "fixed-top" permet à la Navbar de rester fixe même pendant qu'on scroll (Pendant qu'on défile) -->
+        <!-- id = # -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <!-- navbar-brand = indique que l'écrit correspondant à cette intitulé sera à gauche du cadre container -->
+            <a class="navbar-brand" href="/">Boutique de pronostics</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#monMenu"
+                    aria-controls="monMenu"
+                    aria-label="Menu pour mobile">
+
+            <!-- navbar-toggler-icon = bouton responsive (mobile) -->
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+                <!-- navbar-nav = indique que l'écrit correspondant à cette intitulé sera à droite du contenu Boutique de pronostics 
+                    dans le cadre container -->
+                <!-- navbar-nav ml-auto = margin-left = enmène le contenu des rubriques de la gauche vers la droite-->
+            <div class="collapse navbar-collapse" id="monMenu">
+                <div class="navbar-nav ml-auto ">
+                    <a class="nav-item nav-link" href="/">Qui sommes-nous</a>
+                    <a class="nav-item nav-link" href="#Règle du jeu">Règle du jeu</a>
+                    <a class="nav-item nav-link" href="#Galeries photos">Galeries photos</a>
+                    <a class="nav-item nav-link" href="#Nos différents packs">Nos différents packs</a>
+                    <a class="nav-item nav-link" href="#Contactez-nous">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 home-title w-auto">
+                    <h1>Elite <span>S</span> Compagny</h1>
+                    <p>Venez découvrir mon jeu de pronostic footballistique</p>
+
+                    <!-- btn = bouton -->
+                    <a href="/" class="btn btn-full ">Inscription <i class="fas fa-futbol"></i></a>
+                    <a href="/" class="btn btn-ghost">Cliquez pour jouer <i class="fas fa-futbol"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Manipulation Section Règle du Jeu + (bdr-b-dark = bordure bottom = en Bas)-->
+    <section id="Règle du jeu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Règle du jeu</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <img src="ressources/image/Terrafoot2.jpeg" alt="jeux d'argent" class="jeu-img">
+                </div>
+
+                <div class="col-md-5">
+
+                    <!--Règle du jeu No 1-->
+                    <div class="jeu-plus bdr-b-dark">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="jeu-icon">
+                                    <i class="fas fa-futbol"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-md-10">
+                                <h3>Règle du jeu N°1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor.
+                                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                    ridiculus mus.
+                                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Règle du jeu No 2-->
+                    <div class="jeu-plus bdr-b-dark">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="jeu-icon">
+                                    <i class="fas fa-futbol"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-md-10">
+                                <h3>Règle du jeu N°2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor.
+                                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                    ridiculus mus.
+                                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Règle du jeu No 3-->
+                    <div class="jeu-plus bdr-b-dark">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="jeu-icon">
+                                    <i class="fas fa-futbol"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-md-10">
+                                <h3>Règle du jeu N°3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                    eget
+                                    dolor.
+                                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                    ridiculus mus.
+                                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                    eget
+                                    dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Manipulation Section Familles de Joueurs de Football (Redimentionnement plusieurs Image de taille différente au même format + 
+        contour bordure du haut de l'image voir balise : <img> + bdr-tb-dark = bordure top bottom = en Haut en Bas) -->
+
+    <section class="famille-joueur bdr-tb-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>familles de joueurs de football</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="famille-details">
+                        <img class="w-100 bdr-radius-top" height="450px" src="ressources/image/Attaquant.jpeg">
+                        <h4 class="background-skyblue">Attaquant</h4>
+                        <p>Un attaquant marque des buts</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="famille-details">
+                        <img class="w-100 bdr-radius-top" height="450px" src="ressources/image/Milieu de terrain.jpg">
+                        <h4 class="background-lightsalmon">Milieu de terrain</h4>
+                        <p>Un milieu de terrain fait des passes décisives</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="famille-details">
+                        <img class="w-100 bdr-radius-top" height="450px" src="ressources/image/Defenseur.jpg">
+                        <h4 class="background-springgreen">Defenseur</h4>
+                        <p>Un defenseur stop les attaques de l'adversaire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Manipulation Galeries Photo Stade de Football (avec Bootsrap on doit toujours commencer par une div 
+        avec une class container et/où row et/où col sans la déclarer dans le CSS) -->
+
+    <section id="Galeries photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Galeries Photos</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="galerie-image-stade"style="background-image: url(ressources/image/Stade\ de\ Football\(1\).jpg);">
+                        <div class="galerie-image-titre">
+                            <h4>Stade No 1</h4>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-8">
+                    <div class="galerie-image-stade"style="background-image: url(ressources/image/Stade\ de\ Football\(2\).jpg);">
+                        <div class="galerie-image-titre">
+                            <h4>Stade No 2</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="galerie-image-stade"style="background-image: url(ressources/image/Stade\ de\ Football\(3\).jpg">
+                        <div class="galerie-image-titre">
+                            <h4>Stade No 3</h4>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-3">
+                    <div class="galerie-image-stade"style="background-image: url(ressources/image/Stade\ de\ Football\(4\).jpg">
+                        <div class="galerie-image-titre">
+                            <h4>Stade No 4</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="galerie-image-stade"style="background-image: url(ressources/image/Stade\ de\ Football\(5\).jpg">
+                        <div class="galerie-image-titre">
+                            <h4>Stade No 5</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Manipulation de l'Avis Client (La class "bg-ballon" = "Background-ballon" = Image d'arrière plan de l'avis client) -->
+
+    <section class="bg-ballon bdr-tb-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Il ont adoré</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="avis-client">
+                        <blockquote>
+                            Ton concept de site de pronostic footballistique est vraiment révolutionnaire avec un prix très abordable, je le recommande à tous j'adore !.
+                            <cite><img src="ressources/image/Photo Client/avis-clients/allan.jpg">Allan Dos Santos Pinto</cite>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="avis-client">
+                        <blockquote>
+                            Ton concept de site de pronostic footballistique est vraiment révolutionnaire avec un prix très abordable, je le recommande à tous j'adore !.
+                            <cite><img src="ressources/image/Photo Client/avis-clients/emilie.jpg">Emilie du Chatelet</cite>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="avis-client">
+                        <blockquote>
+                            Ton concept de site de pronostic footballistique est vraiment révolutionnaire avec un prix très abordable, je le recommande à tous j'adore !.
+                            <cite><img src="ressources/image/Photo Client/avis-clients/julia.jpg">Julia Martinez</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Manipulation Tableau des Packs (Prix) info (Balise span = Element de type inline) -->
+
+    <section id="Nos différents packs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Nos différents packs</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Pack Chocolat -->
+                <div class="col-md-4">
+                    <div class="pack">
+                        <div class="pack-title">
+                            <h3>Pack Chocolat</h3>
+                            <h4>Gratuit</h4>
+                            <p>30 jours d'essai offert.</p>
+                        </div>
+                        <div class="pack-number">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 44 pronostics/mois</li>
+                                <li><i class="fas fa-check-circle"></i> 11 pronostcs/semaines</li>
+                                <li><i class="fas fa-check-circle"></i> 1 service pour l'aide au pronostic</li>
+                            </ul>
+                        </div>
+                        <div class="pack-signup">
+                            <a href="/" class="btn btn-pack">Je m'inscris</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pack Argent -->
+                <div class="col-md-4">
+                    <div class="pack">
+                        <div class="pack-title pack-argent">
+                            <h3>Pack Argent</h3>
+                            <h4>9€<span>/mois</span></h4>
+                            <p>Pour les amoureux du football.</p>
+                        </div>
+                        <div class="pack-number">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 44 pronostics/mois</li>
+                                <li><i class="fas fa-check-circle"></i> 11 pronostics/semaines</li>
+                                <li><i class="fas fa-check-circle"></i> 1 camion d'eau</li>
+                            </ul>
+                        </div>
+                        <div class="pack-signup">
+                            <a href="/" class="btn btn-pack">Je m'inscris</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pack Or -->
+                <div class="col-md-4">
+                    <div class="pack">
+                        <div class="pack-title pack-or">
+                            <h3>Pack Or</h3>
+                            <h4>19€<span>/mois</span></h4>
+                            <p>Pour les fanatics du football.</p>
+                        </div>
+                        <div class="pack-number">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 44 pronostics/mois</li>
+                                <li><i class="fas fa-check-circle"></i> 11 pronostcs/semaines</li>
+                                <li><i class="fas fa-check-circle"></i> 1 service pour l'aide au pronostic</li>
+                            </ul>
+                        </div>
+                        <div class="pack-signup">
+                            <a href="/" class="btn btn-pack">Je m'inscris</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Formulaire de Contact (Coordonnées Personnelle Vendeur Steven) - ID permet de récupérer les informations -->
+
+    <section id="Contactez-nous">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form">
+                                <h2>Contactez-nous</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+                                pellentesque eu, pretium quis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="phone">
+                            <p><i class="fas fa-phone"></i> 02.89.46.77.22</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="adress">
+                            <p><i class="fas fa-map-marker-alt"></i> Place de la République 72000 Le Mans</p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Formulaire de Contact pour le Client (Nom + Email) -->
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-form">
+                                <label>Nom: </label>
+                                <input type="text" id="name" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="contact-form">
+                                <label>Email: </label>
+                                <input type="email" id="email" placeholder="Ajouter votre email" />
+                                <small>Vous ne recevrez pas de publicité.</small>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Service Client -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>
+                                <label>Séléctionner le service</label>
+                                    <select>
+                                        <option>Service client</option>
+                                        <option>Service Comptable</option>
+                                        <option>SAV</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- Message du Client -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <label>Votre message: </label>
+                                <textarea id="message" rows="3" class="contact-message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Envoyer Button -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <button class="btn-brown">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form> 
+            </div>
+
+                <!-- Google Maps -->
+                <div class="col-md-6">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.8795810017346!2d2.250854651557425!3d48.841435579184136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67ac09948a18d%3A0xdd2450406cef2c5c!2sLe%20Parc%20des%20Princes!5e0!3m2!1sfr!2sfr!4v1618693306511!5m2!1sfr!2sfr" 
+                         width="540" height="570" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- MANIPULATION du Footer -->
+    <footer>
+        <div class="copyright">
+            <p>Site Elite S Compagny - Edition Maquette 2021. <a href="/">Mention légales</a></p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Mettre le link de JS qui est dans la documentation de Bootstrap 4.6 afin de pouvoir fabriquer la Navbar -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+
+
+
+</body>
+
+</html>
